@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>My Webpage</title>
+<style>
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#E74C3C ;
+font-style:italic;
+}
+li{
+float:right;
+}
+
+li a{
+text-decoration:none;
+display:block;
+color:black;
+font-size:22px;
+text-align:center;
+padding:10px 30px;
+width:115px;
+font-weight:bold;
+}
+li a:hover{
+background-color:black;
+color:white;
+}
+ul ul li{
+float:none;
+}
+ul li ul.dropdown {
+            min-width: 80px;
+			background:#E74C3C ;
+            font-style:italic;
+            display: none;
+            position: absolute;
+            z-index:1;
+            
+        }
+ ul li:hover ul.dropdown {
+        display: block; 
+    }
+ body{
+ background-image:url("web.jpg");
+ background-repeat:no-repeat;
+ background-size:100% 100%;
+ }
+#divison{
+font-size:30px;
+position: fixed;
+left:150px;
+bottom:400px;
+width: 100%;
+color:black;
+text-align: left;
+font-weight:bold;
+font-style:italic;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="login.html">Login</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="test.html">Practise Test</a></li>
+<li>
+<a href="#">Courses</a>
+<ul class=dropdown>
+<li><a href="c.html">C/C++</a></li>
+<li><a href="java.html">Java</a></li>
+<li><a href="python.html">Python</a></li>
+</ul>
+</li>
+<li><a href="#">Home</a></li>
+</ul>
+<div style="margin-top:50px;">
+<img src="elearning.jpg" width="50" height="50" style="float:left; margin-left:20px"><h1 style="font-style:italic;font-size:40px;margin-left:80px; ">E-Learning</h1>
+</div>
+<div id="divison">
+<p>"Never stop Learning, <p>
+<p>Because life never stop Teaching"</p>
+</div>
+</body>
+</html>
