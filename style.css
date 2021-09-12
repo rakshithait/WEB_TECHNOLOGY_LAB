@@ -1,50 +1,34 @@
 
 li a{
-text-decoration:none;
-display:block;
-color:black;
-font-size:22px;
-text-align:center;
-padding:10px 30px;
-width:100px;
-font-weight:bold;
-font-style:italic;
-}
-ul{
-list-style-type:none;
-background-color:#E74C3C ;
-margin:0;
-padding:0;
-float:right;
-width:320px;
-overflow:hidden;
-font-style:italic;
-}
-li a:hover{
-background-color:black;
-color:white;
-}
-ul ul li{
-float:none;
-}
-li{
-float:right;
-}
-div ul li{
-
-}
-ul li ul.dropdown {
-            min-width: 80px;
-			background:#E74C3C ;
-            font-style:italic;
-            display: none;
-            position: absolute;
-            z-index:1;
-            
-        }
- ul li:hover ul.dropdown {
-        display: block; 
+    text-decoration:none;
+    display:block;
+    color:white;
+    font-size:20px;
+    text-align:center;
+    padding:20px 20px;
+    width:180px;
+    font-family: 'Times New Roman', Times, serif;
     }
-body{
-	background-color:#F1948A ;
-}
+    ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    float:right;
+    overflow:hidden;
+    }
+    li a:hover{
+    color:white;
+    text-decoration: none;
+    }
+    
+    li{
+    float:right;
+    }
+    body{background-image: url("common.jpg");
+        background-repeat: no-repeat;
+        max-width:100%;
+        height:aut0;
+    }
+    
+    
+    
