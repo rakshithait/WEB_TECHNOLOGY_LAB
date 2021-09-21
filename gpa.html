@@ -1,0 +1,185 @@
+<html>
+  <head>
+  <style>
+  body{
+  background-image:url("cgpa1.jpg");
+  background-repeat:no-repeat;
+ background-size:100% 100%;
+  }
+	td{
+	color:white;
+	font-size:20px;
+	}
+	h2
+	{
+	color:white;
+	margin-top:50px;
+	}
+	</style>
+        <title>GPA CALCULATION</title>
+        <script language="javascript">
+                function calculate()
+                {
+                        var c1 = document.getElementById("credit1");
+				        var r1 = parseInt(c1.options[c1.selectedIndex].text);
+                        var g1= document.getElementById("grade1");
+				        var r2 = parseInt(g1.options[g1.selectedIndex].value);
+						var c2 = document.getElementById("credit2");
+				        var r3 = parseInt(c2.options[c2.selectedIndex].text);
+                        var g2= document.getElementById("grade2");
+				        var r4 = parseInt(g2.options[g2.selectedIndex].value);
+						var c3 = document.getElementById("credit3");
+				        var r5 = parseInt(c3.options[c3.selectedIndex].text);
+                        var g3= document.getElementById("grade3");
+				        var r6 = parseInt(g3.options[g3.selectedIndex].value);
+						var c4 = document.getElementById("credit4");
+				        var r7 = parseInt(c4.options[c4.selectedIndex].text);
+                        var g4= document.getElementById("grade4");
+				        var r8 = parseInt(g4.options[g4.selectedIndex].value);
+						var c5 = document.getElementById("credit5");
+				        var r9 = parseInt(c5.options[c5.selectedIndex].text);
+                        var g5= document.getElementById("grade5");
+				        var r10= parseInt(g5.options[g5.selectedIndex].value);
+						var c6 = document.getElementById("credit6");
+				        var r11= parseInt(c6.options[c6.selectedIndex].text);
+                        var g6= document.getElementById("grade6");
+				        var r12= parseInt(g6.options[g6.selectedIndex].value);
+						var t=r1+r3+r5+r7+r9+r11;
+                        var ansD = document.getElementById("answer");
+                        ansD.value =parseFloat(((r1*r2)+(r3*r4)+(r5*r6)+(r7*r8)+(r9*r10)+(r11*r12))/t).toFixed(2);
+                }
+				
+        </script>
+  </head>
+  <body>
+  <center><h2>GPA CALCULATION</h2></center>
+  <center>
+  
+  <table cellpadding=12>
+        <form>
+		<tr>
+		<td>SUBJECT</td>
+		<td>CREDIT</td>
+		<td>GRADE</td>
+		</tr>
+        <tr><td>SUBJECT 1</td>
+		<td>
+		<select id="credit1">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+		</select>
+		</td>
+		<td>
+		<select id="grade1">
+        <option value=10>O</option>
+        <option value=9>A+</option>
+        <option value=8>A</option>
+        <option value=7>B+</option>
+		<option value=6>B</option>
+		</select>
+		</td>
+        <tr><td>SUBJECT 2</td>
+		<td>
+		<select id="credit2">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+		</select>
+		</td>
+		<td>
+		<select id="grade2">
+        <option value=10>O</option>
+        <option value=9>A+</option>
+        <option value=8>A</option>
+        <option value=7>B+</option>
+		<option value=6>B</option>
+		</select>
+		</td>
+		<tr><td>SUBJECT 3</td>
+		<td>
+		<select id="credit3">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+		</select>
+		</td>
+		<td>
+		<select id="grade3">
+        <option value=10>O</option>
+        <option value=9>A+</option>
+        <option value=8>A</option>
+        <option value=7>B+</option>
+		<option value=6>B</option>
+		</select>
+		</td>
+        <tr><td>SUBJECT 4</td>
+		<td>
+		<select id="credit4">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+		</select>
+		</td>
+		<td>
+		<select id="grade4">
+        <option value=10>O</option>
+        <option value=9>A+</option>
+        <option value=8>A</option>
+        <option value=7>B+</option>
+		<option value=6>B</option>
+		</select>
+		</td>
+		<tr><td>SUBJECT 5</td>
+		<td>
+		<select id="credit5">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+		</select>
+		</td>
+		<td>
+		<select id="grade5">
+        <option value=10>O</option>
+        <option value=9>A+</option>
+        <option value=8>A</option>
+        <option value=7>B+</option>
+		<option value=6>B</option>
+		</select>
+		</td>
+        <tr><td>SUBJECT 6</td>
+		<td>
+		<select id="credit6">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+		</select>
+		</td>
+		<td>
+		<select id="grade6">
+        <option value=10>O</option>
+        <option value=9>A+</option>
+        <option value=8>A</option>
+        <option value=7>B+</option>
+		<option value=6>B</option>
+		</select>
+		</td>
+		<tr><td colspan=3 align=center><input type="button" name="Sumbit" value="CALCULATE" onclick="javascript:calculate()"/></td></tr>
+        <tr><td colspan=2 align=center>GPA<input type="text" id="answer" name="answer" value=""/></td>
+		<td><input type="button" name="GO" value="OK" onclick="window.location.href='cgpa.html';"/></td>
+		</tr>
+		
+		</form>
+		</table>
+		
+		</center>
+  </body>
+</html>
+ 
+ 
