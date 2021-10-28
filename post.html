@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Student Registration</title>
+<style>
+h1{
+font-family:"comic sans ms";
+font-size:20px;
+
+}
+td{
+font-family:"comic sans ms";
+font-size:20px;
+}
+body {
+    background-image: url("login1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+}
+</style>
+</head>
+
+<body>
+    <br>
+	<br>
+	<br>
+	<h1 align="center">STUDENT REGISTRATION</h1>
+    <form class="signup-form" action="http://localhost:7010" method="POST">
+<table align="center">
+
+                   <tr>
+                   <td> <label for="fname" class="label-title">First name</label></td>
+                    <td><input type="text" id="fname" name="fname" class="form-input" placeholder="enter your first name"/></td></tr>
+                    <tr>
+                    <td><label for="lname" class="label-title">Last name</label>
+                    <td><input type="text" id="lname" name="lname" class="form-input" placeholder="enter your last name"/></td></tr>
+                     <tr>
+                    <td><label for="rno" class="label-title">Roll no</label>
+                    <td><input type="text" id="rno" name="rno" class="form-input" placeholder="enter your roll no"/></td></tr>
+                    <tr>
+                    <td><label for="gen" class="label-title">Gender</label>
+                    <td><input type="text" id="gen" name="gen" class="form-input" placeholder="enter your gender"/></td></tr>
+                    <tr>
+                    <td><label for="dept" class="label-title">Department</label>
+                    <td><input type="text" id="dept" name="dept" class="form-input" placeholder="enter your department"/></td></tr>
+                    <tr>
+                    <td><label for="yr" class="label-title">Year of Study</label>
+                    <td><input type="text" id="yr" name="yr" class="form-input" placeholder="enter your year of study"/></td></tr>
+                    <tr>
+                    <td><label for="email" class="label-title">Email</label>
+                    <td><input type="email" id="email" name="email" class="form-input" placeholder="enter your email" /></td></tr>
+                     <tr>
+                    <td><label for="num" class="label-title">Mobile Number</label>
+                    <td><input type="text" id="num" name="num" class="form-input" placeholder="enter your mobile number" /></td></tr>
+                
+                     <tr><td colspan=2 align="center"><button type="submit" class="btn">Submit</button></td></tr>
+       </table>
+    </form>
+</body>
+
+</html>
